@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zola B</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-9 single-row">
+            <h1>JQuery Quiz 2</h1>
+        </div>
+
+        <div class="col-md-9 single-row">
+            <h3>1. Which, if any of the following 3 code fragments are equivalent? Explain why they are different, if they are. Explain why they have different parameters and be equivalent, if they are equivalent.</h3>
+            <pre>
+                //code fragment 1
+                $("li").each(function(idx, e){
+                    $(e).css("color", "yellow"); 
+                });
+                //code fragment 2
+                $("li").each(function(){
+                    $(this).css("color", "yellow");
+                });
+                //code fragment 3
+                $("li").each(function(idx){
+                    $(this).css("color", "yellow");
+                });
+            </pre>
+
+        </div>
+        <div class="col-md-9 single-row">
+            <hr>
+
+        </div>
+        <div class="col-md-9 single-row">
+            <p>All 3 code are equivalent because in this case e equals this. Also idx is not used.</p>
+        </div>
+
+        <div class="col-md-9 single-row">
+            <h3>2. Write a JQuery expression to find all divs on a page that include an unordered list in this them, and make their text color be blue.</h3>
+            <pre>
+                &lt;body&gt;    
+                    &lt;div&gt;no ul here &lt;/div&gt;
+                    &lt;div&gt;
+                        This does contain a ul.
+                        &lt;ul&gt;
+                            &lt;li&gt;the first item&lt;/li&gt;
+                            &lt;li&gt;the second item&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+
+                    &lt;script&gt;
+                        &lt;!-INSERT YOUR JQERY CODE HERE- - &gt;
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            </pre>
+        </div>
+
+        <div class="col-md-9 single-row">
+            <hr>
+        </div>
+        <div class="col-md-9 single-row">
+            <pre>
+                $(&quot;div&quot;).has(&quot;ul&quot;).css(&quot;color&quot;blue&quot;);
+            </pre>
+        </div>
+
+        <div class="col-md-9 single-row">
+            <h3> 3. Write JQuery code to append the following div element (and all of its contents) dynamically to the body element.</h3>
+            <pre>
+                &lt;div&gt;&lt;h1&gt;JQuery Core&lt;/h1&gt;&lt;/div&gt;
+                HTML:
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;utf-8&quot;&gt;
+                        &lt;title&gt;JS Bin&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+
+            </pre>
+        </div>
+
+        <div class="col-md-9 single-row">
+            <hr>
+        </div>
+
+        <div class="col-md-9 single-row"><pre>
+            $function(){
+                var div="&lt;div&gt;&lt;h1&gt;JQuery Core&lt;/h1&gt;&lt;/div&gt;";
+                $("body").append(div);
+            });
+        </pre>
+    </div>
+</div>
+
+<footer>
+    <a href="https://validator.w3.org/check?uri=https://BZola.github.io"> <img
+        src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png"
+    alt="html validator"/></a>
+</footer>
+    
+</body>
+</html>
